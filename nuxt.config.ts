@@ -1,3 +1,7 @@
+import { defineNuxtConfig } from "nuxt/config";
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxt/ui','@samk-dev/nuxt-vcalendar'],
+  plugins:[
+    '~/plugins/moment.ts'
+  ]
 });
